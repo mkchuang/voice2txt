@@ -4,12 +4,15 @@
 包含音訊錄製、緩衝管理、Whisper 引擎等核心元件
 """
 
-from .audio_recorder import AudioRecorder
+from .audio_recorder import AudioRecorder, RecordingState
 from .buffer_manager import RingBuffer
-from .whisper_engine import WhisperEngine
+from .whisper_engine import WhisperEngine, WhisperModel, EngineState
 
 __all__ = [
     'AudioRecorder',
-    'RingBuffer', 
-    'WhisperEngine'
+    'RecordingState', 
+    'RingBuffer',
+    'WhisperEngine',
+    'WhisperModel',
+    'EngineState'
 ]
